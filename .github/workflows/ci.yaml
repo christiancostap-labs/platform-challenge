@@ -35,11 +35,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Debug
-        run: |
-          ls -l /var/run/docker.sock || true
-          docker info || true
-          sleep 300
+
       - name: Build Docker image
         working-directory: app
         run: |
