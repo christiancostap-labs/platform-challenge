@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: gha-runner-scale-set
+    runs-on: arc-runner-set
 
     steps:
       - name: Checkout repository
